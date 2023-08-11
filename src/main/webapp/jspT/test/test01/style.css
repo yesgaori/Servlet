@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#wrap {
+	width:1200px;
+	margin: 0 auto;
+}
+
+header {
+	height:100px;
+}
+
+#title {
+	text-color:crimson
+}
+
+
+.main-menu {
+	height:50px;
+	background-color:crimson
+}
+
+.contents {
+}
+
+footer {
+	height:70px;
+}

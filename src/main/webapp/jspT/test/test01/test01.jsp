@@ -71,17 +71,14 @@
 					</tr>
 				</thead>
 				<tbody>
-					<% for(Map<String, String> content:list) { 
-							if(category.equals("all")) {
-								if(category.equals("ground") && content.get("category") == "지상파") {
-									
-								}
+					<% for(Map<String, String> channel:list) { 
+							if(category.equals(channel.get(category))) {
 							
 					%>
 					<tr>
-						<td><%= content.get("ch") %></td>
-						<td><%= content.get("name") %></td>
-						<td><%= content.get("category") %></td>
+						<td><%= channel.get("ch") %></td>
+						<td><%= channel.get("name") %></td>
+						<td><%= channel.get("category") %></td>
 					</tr>
 					<% 		}
 						}%>

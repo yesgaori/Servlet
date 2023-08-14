@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+#wrap {
+	width:1200px;
+	height:800px;
+	margin:0 auto;
+}
+
+header {
+	height:100px;
+}
+
+
+
+.main-menu {
+	height:50px;
+}
+
+.main-contents {
+	height:600px;
+}
+
+.singer-info {
+	height:200px;
+}
+
+.musicInfo {
+	height:30px;
+}
+
+.content2 {
+	height:370px;
+}
+
+.content {
+	height:400px;
+}
+
+.head-text {
+	height:50px;
+}
+
+footer {
+	height:50px;
+}

@@ -2,7 +2,6 @@
 
 #wrap {
 	width:1200px;
-	height:800px;
 	margin:0 auto;
 }
 
@@ -22,6 +21,10 @@ header {
 
 .singer-info {
 	height:200px;
+}
+
+.small {
+	font-size: x-small;	
 }
 
 .musicInfo {

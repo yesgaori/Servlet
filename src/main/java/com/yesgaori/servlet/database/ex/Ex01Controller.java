@@ -1,4 +1,4 @@
-package com.yesgaori.servlet.database;
+package com.yesgaori.servlet.database.ex;
 
 import java.io.IOException;
 import java.io.PrintWriter;

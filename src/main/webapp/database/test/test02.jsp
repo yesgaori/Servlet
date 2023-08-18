@@ -16,18 +16,21 @@
 		MysqlService mysqlService = MysqlService.getInstance();
 		mysqlService.connect();
 		
-		ResultSet resultSet = mysqlService.select("SELECT `site-name`, `site-address` FROM `favorites` ORDER BY `id` DESC;");
-	
+		ResultSet resultSet = mysqlService.select("SELECT `id`, `site-name`, `site-address` FROM `favorites` ORDER BY `id` DESC;");
+		
+		
+		
 	%>
 
 
-	<div id="wrap" class="container text-center">
+	<div id="wrap" class="container">
 		<div>
-			<table class="table">
+			<table class="table text-center">
 				<thead>
 					<tr>
 						<th>사이트</th>
 						<th>사이트 주소</th>
+						<th></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -35,12 +38,15 @@
 					<tr>
 						<td> <%= resultSet.getString("site-name") %> </td>
 						<td><a target="_blank" href="<%= resultSet.getString("site-address") %>"> <%= resultSet.getString("site-address") %> </a></td>
-						<td><button class="btn btn-danger">삭제</button></td>
+						<td><a href="/db/site-delete?result=<%= resultSet.getInt("id") %>" class="btn btn-danger">삭제</a></td>
 					</tr>
 					<% } %>
+					
+					
 				</tbody>
 			</table>
 		</div>
+		<a href="/database/test/test02-input.jsp" class="btn btn-success">즐겨찾기 추가</a>
 	</div>
 	
 	
